@@ -143,7 +143,7 @@
                 </ul>
             </address>
             
-            <form id="contact" action="">
+<form id="contact" onsubmit="sendMail(event)">
                 <label for="waitlist">Lets have a chat to discuss your needs</label>
                 <div>
                     <label>Name</label>
@@ -152,7 +152,7 @@
                     <input type="text" id="email" placeholder="Enter your email">
                     <label>Message</label>
                     <textarea id="message" placeholder="Your message"></textarea>
-                    <button onclick="sendMail()">Send</button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
             
@@ -173,7 +173,9 @@ function toggleName() {
 }
 
 
-      function sendMail() {
+      function sendMail(e) {
+    e.preventDefault(); // ❗ Prevent the page from refreshing
+
     const nameField = document.getElementById('name');
     const emailField = document.getElementById('email');
     const messageField = document.getElementById('message');
@@ -183,40 +185,38 @@ function toggleName() {
     const message = messageField.value.trim();
 
     if (!name || !email || !message) {
-        Toastify('Please fill in all fields.');
+        Toastify({
+            text: "Please fill in all fields.",
+            backgroundColor: "red",
+            duration: 3000
+        }).showToast();
         return;
     }
 
-    const params = {
-        name,
-        email,
-        message
-    };
+    const params = { name, email, message };
 
     emailjs.send("service_u6v58d7", "template_h5k2ov5", params)
-        .then(function(response) {
-           Toastify({
+        .then(() => {
+            Toastify({
                 text: `Thanks, ${name}! I’ll be in touch to discuss your project.`,
-
                 backgroundColor: "#1e3a8a",
-                position: "center",
                 duration: 3000
             }).showToast();
-            // ✅ Clear the input fields
+
+            // ✅ Clear form
             nameField.value = "";
             emailField.value = "";
             messageField.value = "";
-        }, function(error) {
-           Toastify({
-            text: "Failed to send email. Please try again later.",
-            backgroundColor: "#1e3a8a",
-            position: "center",
-            duration: 3000
-        }).showToast();
-           
+        }, (error) => {
             console.error("EmailJS error:", error);
+            Toastify({
+                text: "Failed to send email. Please try again later.",
+                backgroundColor: "red",
+                duration: 3000
+            }).showToast();
         });
 }
+
 var typed = new Typed('.typed', {
       strings: ['Web Developer', 'Graphic Designer', 'UI/UX Designer'],
       typeSpeed: 50,
