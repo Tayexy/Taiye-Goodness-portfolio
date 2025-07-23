@@ -518,6 +518,10 @@ ul li {
 
   #portfolio {
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
   }
 
   #portfolio h2 {
