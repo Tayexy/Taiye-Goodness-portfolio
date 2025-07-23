@@ -1,230 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taiye Goodness</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Toastify CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taiye Goodness</title>
+  <link rel="stylesheet" href="style.css">
 
-<!-- Toastify JS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- Toastify CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Toastify JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
       emailjs.init({
         publicKey: "nDqVLSrtj1-SOburh",
       });
-   })();
-</script>
+    })();
+  </script>
 </head>
+
 <body>
-    <header>
-  <nav class="navbar">
-    <a href="index.html" class="logo">Taiye Goodness</a>
-    <div class="menu-toggle" id="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <ul class="nav-link" id="nav-links">
-      <li><a href="#skillset" onclick="toggleMenu()">Skills</a></li>
-      <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-      <li><a href="#footer" onclick="toggleMenu()">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Taiye Goodness</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-link" id="nav-links">
+        <li><a href="#skillset" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+        <li><a href="#footer" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    
-    <main>
-        <section id="hero">
-            <div>
-                <h1>I am a  <span class="typed"></span></h1>
-                <p>I'm a web developer with a passion for creating beautiful and functional websites, experienced in HTML, CSS, JavaScript, and React, aiming to build responsive and user-friendly web applications that provide a great user experience.</p>
-                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" class="btn btn-color-2">
-  Hire Me
-</button>
+  <!-- MAIN -->
+  <main>
+    <section id="hero">
+      <div>
+        <h1>I am a <span class="typed"></span></h1>
+        <p>I'm a web developer with a passion for creating beautiful and functional websites, experienced in HTML, CSS, JavaScript,React and vue.js, aiming to build responsive and user-friendly web applications that provide a great user experience.</p>
+        <button class="btn btn-color-2" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Hire Me</button>
+        <button class="btn btn-color-2" onclick="window.open('TAIYE GOODNESS tech cv.pdf')">View CV</button>
+      </div>
+      <div>
+        <img src="./web-icon.png" class="img-fluid" alt="web-icon">
+      </div>
+    </section>
 
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('TAIYE GOODNESS tech cv.pdf')"
-          >
-            View CV
-          </button>
-            </div>
-            <div>
-                <img src="./web-icon.png" class="img-fluid" alt="">
-            </div>
-        </section>
-        <section id="skillset">
-            <div>
-                <img src="./Taiye.jpg" alt="Taiye Goodness">
-            </div>
-            <div>
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Git</li>
-                    <li>Github</li>
-                    <li>Graphic Design</li>
-                    <li>UI/UX</li>
-                    <li>Photoshop</li>
-                    <li>Wordpress development</li>
-                </ul>
-            </div>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="projects">
+    <section id="skillset">
+      <div>
+        <img src="./Taiye.jpg" alt="Taiye Goodness">
+      </div>
+      <div>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Vue.js</li><li>Git</li><li>Github</li><li>UI/UX</li><li>Graphic Design</li><li>Photoshop</li><li>Wordpress development</li>
+        </ul>
+      </div>
+    </section>
 
-              <a href="https://o-laterm-interior.vercel.app/" style="text-decoration: none; color: inherit;">
-  <div style="text-align: center;">
-    <img src="O latem interior.png" alt="Tape and Joint Logo" style="width: 300px; height: auto;">
-    <h3>Tape and Joint</h3>
-    <p>Get a tape and joint website</p>
-  </div>
-</a>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="projects">
+        <a href="https://o-laterm-interior.vercel.app/" style="text-decoration: none; color: inherit;">
+          <div style="text-align: center;">
+            <img src="O latem interior.png" alt="Tape and Joint Logo" style="width: 300px; height: auto;">
+            <h3>Tape and Joint</h3>
+            <p>Get a tape and joint website</p>
+          </div>
+        </a>
 
-
-  <div>
-    <img src="Project 2.png" alt="project 2" style="width: 300px; height: auto;">
-    <h3>Dashboard</h3>
-    <p>A dashboard UI design</p>
-  </div>
-
-               <a href="https://taiyegoodness.carrd.co/" style="text-decoration: none; color: inherit;">
-  <div> 
-                <div>
-                    <img src="Graphics sample.jpg" alt="Grapics design" style="width: 300px; height: auto;">
-                   <h3>Graphics Design</h3>
-                    <p>Creative visual solutions for brand design and identity.</p>
-
-                </div>
-            </a>
-
-            </div>
-        </section>
-    </main>
-    <footer id="footer">
+        <a href="https://mindpal-sigma.vercel.app/" style="text-decoration: none; color: inherit;">
         <div>
-            <address>
-                <h3>Contact</h3>
-                <ul>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                        taiyegoodness@gmail.com
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                        +234 7039426515
-                    </li>
-                </ul>
-            </address>
-            <address>
-                <h3>Follow Me</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/taiye-goodness-olawuyi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/taiyegoodness?igsh=MTB2OGVnZG14YW45cA==" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-</li>
-
-                </ul>
-            </address>
-            
-<form id="contact" onsubmit="sendMail(event)">
-                <label for="waitlist">Lets have a chat to discuss your needs</label>
-                <div>
-                    <label>Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
-                    <label>Email</label>
-                    <input type="text" id="email" placeholder="Enter your email">
-                    <label>Message</label>
-                    <textarea id="message" placeholder="Your message"></textarea>
-                    <button type="submit">Send</button>
-                </div>
-            </form>
-            
+          <img src="Mindpal.png" alt="project 2" style="width: 300px; height: auto;">
+          <h3>A web application</h3>
+          <p>For daily task/habit management tool</p>
         </div>
-        <p>&copy; 2025 Taiye Goodness. All rights reserved.</p>
-    </footer>
+      </a>
 
-    <script>
-document.getElementById('menu-toggle').addEventListener('click', toggleName
-        
-        
-);
+        <a href="https://taiyegoodness.carrd.co/" style="text-decoration: none; color: inherit;">
+          <div>
+            <img src="Graphics sample.jpg" alt="Grapics design" style="width: 300px; height: auto;">
+            <h3>Graphics Design</h3>
+            <p>Creative visual solutions for brand design and identity.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
 
-function toggleName() {
-    // Add or remove the 'active' class on the nav links
-    const navLinks = document.querySelector('.nav-link');
-    navLinks.classList.toggle('active');
-}
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div>
+      <address>
+        <h3>Contact</h3>
+        <ul>
+          <li>taiyegoodness@gmail.com</li>
+          <li>+234 7039426515</li>
+        </ul>
+      </address>
 
+      <address>
+        <h3>Follow Me</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/taiye-goodness-olawuyi" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/taiyegoodness" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+      </address>
 
-      function sendMail(e) {
-    e.preventDefault(); // ❗ Prevent the page from refreshing
+      <form id="contact" onsubmit="sendMail(event)">
+        <label>Let's have a chat to discuss your needs</label>
+        <div>
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+          <label>Email</label>
+          <input type="text" id="email" placeholder="Enter your email">
+          <label>Message</label>
+          <textarea id="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <p>&copy; 2025 Taiye Goodness. All rights reserved.</p>
+  </footer>
 
-    const nameField = document.getElementById('name');
-    const emailField = document.getElementById('email');
-    const messageField = document.getElementById('message');
-
-    const name = nameField.value.trim();
-    const email = emailField.value.trim();
-    const message = messageField.value.trim();
-
-    if (!name || !email || !message) {
-        Toastify({
-            text: "Please fill in all fields.",
-            backgroundColor: "red",
-            duration: 3000
-        }).showToast();
-        return;
+  <!-- Interactions -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', toggleName);
+    function toggleName() {
+      const navLinks = document.querySelector('.nav-link');
+      navLinks.classList.toggle('active');
     }
 
-    const params = { name, email, message };
+    function sendMail(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
 
-    emailjs.send("service_u6v58d7", "template_h5k2ov5", params)
+      if (!name || !email || !message) {
+        Toastify({ text: "Please fill in all fields.", backgroundColor: "red", duration: 3000 }).showToast();
+        return;
+      }
+
+      emailjs.send("service_u6v58d7", "template_h5k2ov5", { name, email, message })
         .then(() => {
-            Toastify({
-                text: `Thanks, ${name}! I’ll be in touch to discuss your project.`,
-                backgroundColor: "#1e3a8a",
-                duration: 3000
-            }).showToast();
-
-            // ✅ Clear form
-            nameField.value = "";
-            emailField.value = "";
-            messageField.value = "";
-        }, (error) => {
-            console.error("EmailJS error:", error);
-            Toastify({
-                text: "Failed to send email. Please try again later.",
-                backgroundColor: "red",
-                duration: 3000
-            }).showToast();
+          Toastify({ text: `Thanks, ${name}! I’ll be in touch.`, backgroundColor: "#1e3a8a", duration: 3000 }).showToast();
+          document.getElementById('name').value = "";
+          document.getElementById('email').value = "";
+          document.getElementById('message').value = "";
+        }).catch(() => {
+          Toastify({ text: "Failed to send email. Try again.", backgroundColor: "red", duration: 3000 }).showToast();
         });
-}
+    }
 
-var typed = new Typed('.typed', {
+    new Typed('.typed', {
       strings: ['Web Developer', 'Graphic Designer', 'UI/UX Designer'],
       typeSpeed: 50,
-        backSpeed: 50,
-        loop: true,
+      backSpeed: 50,
+      loop: true,
+    });
+  </script>
+
+  <!-- 🔥 Firebase Activity Tracker -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD4oaLUQZzCHQWdcIHNQN_MuoJzVtJmaDE",
+      authDomain: "activity-log-project-6cf5b.firebaseapp.com",
+      projectId: "activity-log-project-6cf5b",
+      storageBucket: "activity-log-project-6cf5b.appspot.com",
+      messagingSenderId: "605756075669",
+      appId: "1:605756075669:web:b2ac24efa27bf12ab7759c"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Track page visit
+    await addDoc(collection(db, "activityLogs"), {
+      action: "Page Visit",
+      page: window.location.pathname,
+      timestamp: new Date().toISOString(),
+      userAgent: navigator.userAgent
     });
 
-
-    </script>
+    // Track button & link clicks
+    document.addEventListener("click", async (e) => {
+      const target = e.target.closest("button, a");
+      if (target) {
+        const text = target.innerText || target.getAttribute("href") || "Unknown";
+        const tag = target.tagName;
+        await addDoc(collection(db, "activityLogs"), {
+          action: "Click",
+          element: tag,
+          content: text,
+          page: window.location.pathname,
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent
+        });
+      }
+    });
+  </script>
 </body>
 </html>
