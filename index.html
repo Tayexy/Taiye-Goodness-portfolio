@@ -146,11 +146,13 @@
         </div>
       </form>
     </div>
-    <p>&copy; 2025 Taiye Goodness. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Taiye Goodness. All rights reserved.</p>
+
   </footer>
 
   <!-- Interactions -->
   <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('menu-toggle').addEventListener('click', toggleName);
     function toggleName() {
       const navLinks = document.querySelector('.nav-link');
